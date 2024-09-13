@@ -1,34 +1,89 @@
+import com.sun.nio.sctp.SctpStandardSocketOptions;
+
+import javax.net.ssl.SSLContext;
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
 
 
-// Fórmula 1
+      // Solicitar datos de domicilio
+      System.out.println("Ingrese los datos de domicilio:");
+      System.out.print("Calle: ");
+      String calle = input.nextLine(); // Usar Input para la entrada de datos
+      System.out.print("Número: ");
+      String numeroDomicilio = input.nextLine();
+      System.out.print("Colonia: ");
+      String colonia = input.nextLine();
+      System.out.print("Ciudad: ");
+      String ciudad = input.nextLine();
+      System.out.print("Código Postal: ");
+      String codigoPostal = input.nextLine();
 
-      double num1 = (12 + 8) * (5 - 3);
-      double num2 = 6.0 / 2;
-      double den1 = (3 * 4);
-      double den2 = (8.0 / 2);
-      double resultadoFormula1 = (num1 - num2) / (den1 + den2);
-      System.out.println("Resultado de la Fórmula 1: " + resultadoFormula1);
+      // Imprimir domicilio
+      System.out.println("\nDomicilio completo:");
+      System.out.println("Calle: " + calle);
+      System.out.println("Número: " + numeroDomicilio);
+      System.out.println("Colonia: " + colonia);
+      System.out.println("Ciudad: " + ciudad);
+      System.out.println("Código Postal: " + codigoPostal);
+
+      // Solicitar datos escolares
+      System.out.println("\nIngrese los datos de escolaridad:");
+
+      System.out.println("Primaria:");
+      System.out.print("  Escuela: ");
+      String escuelaPrimaria = input.nextLine();
+      System.out.print("  Ubicación: ");
+      String ubicacionPrimaria = input.nextLine();
+      System.out.print("  Fechas (inicio-fin): ");
+      String fechasPrimaria = input.nextLine();
+
+      System.out.println("Secundaria:");
+      System.out.print("  Escuela: ");
+      String escuelaSecundaria = input.nextLine();
+      System.out.print("  Ubicación: ");
+      String ubicacionSecundaria = input.nextLine();
+      System.out.print("  Fechas (inicio-fin): ");
+      String fechasSecundaria = input.nextLine();
+
+      System.out.println("Preparatoria:");
+      System.out.print("  Escuela: ");
+      String escuelaPreparatoria = input.nextLine();
+      System.out.print("  Ubicación: ");
+      String ubicacionPreparatoria = input.nextLine();
+      System.out.print("  Fechas (inicio-fin): ");
+      String fechasPreparatoria = input.nextLine();
+
+      
+      // Solicitar datos del deporte favorito
+      System.out.println("\nIngrese los datos de su deporte favorito:");
+      System.out.print("Deporte: ");
+      String deporteFavorito = input.nextLine();
+      System.out.print("Posición favorita: ");
+      String posicionFavorita = input.nextLine();
+      System.out.print("Equipo favorito: ");
+      String equipoFavorito = input.nextLine();
+      System.out.print("Jugador favorito: ");
+      String jugadorFavorito = input.nextLine();
+      System.out.print("Frecuencia de juego: ");
+      String frecuenciaJuego = input.nextLine();
+      System.out.print("Tiempo jugando: ");
+      String tiempoJugando = input.nextLine();
+
+      System.out.println("\nDatos de su deporte favorito:");
+      System.out.println("Deporte: " + deporteFavorito);
+      System.out.println("Posición favorita: " + posicionFavorita);
+      System.out.println("Equipo favorito: " + equipoFavorito);
+      System.out.println("Jugador favorito: " + jugadorFavorito);
+      System.out.println("Frecuencia de juego: " + frecuenciaJuego);
+      System.out.println("Tiempo jugando: " + tiempoJugando);
 
 
-      // Fórmula 2
-
-      double numerador = (((9 * 5) - (15 + 3) + (8 * 2) - (12.0 / 4)) * (7 + 2) - (6 * 3 / 2.0))
-              / (2 + (3 * 2.0) / (4 - 2)) + 5 * ((8 / 4.0) + 1) - (6 / (2 + 1));
-      double denominador = (((4 + 2) * (7 - 1)) / (3 + 1) + ((3 * 2) - (5 + 1)) * (8 / 2.0))
-              / (3 + (6 / 2.0) + (7 / 2.0)) + 2 * (3 + (8 / 4.0));
-      double resultado = numerador / denominador;
-      System.out.println("Resultado de la formula 2: " + resultado);
 
 
-
-
-
-      // Fórmula 3
-
-      double num3 =((6 + 4) * 3) - (18 / 2);
-      double den3 = (8 - 5) + (3 * 2);
-      double resultadoFormula3 = num3 / den3;
-      System.out.println("Resultado de la Fórmula 3: " + resultadoFormula3);
-
+    }
+}
