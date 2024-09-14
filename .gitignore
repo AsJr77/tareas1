@@ -1,0 +1,9 @@
+# Ignorar archivos de clase de Java
+*.class
+
+# Ignorar archivos generados por el IDE
+*.log
+*.tmp
+
+# Ignorar archivos específicos
+calculadora.java
