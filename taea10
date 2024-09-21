@@ -1,0 +1,49 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+
+
+      String palabraEjercicio = " supercalifragilisticoespialidoso ";
+
+      //longitud
+      int longitud= palabraEjercicio.length();
+      System.out.println("longitud : " + longitud);
+
+      //caracter 10
+      char posDiez = palabraEjercicio.charAt(10);
+      System.out.println("caracter e posicion 10 :" + posDiez);
+
+      //MAYUSCULAS
+      String mayusculas = palabraEjercicio.toUpperCase();
+      System.out.println("En mayusculas:" + mayusculas);
+
+      //subcadena
+      String palabra = " supercalifragilisticoespialidoso ";
+      String palabraCortada = palabra.substring(6,17);
+      System.out.println("subcadena 5-15: a" + palabraCortada);
+
+      //primer ocurrencia
+       String palabraNueva = " supercalifragilisticoespialidoso ";
+       int primerOcurrencia = palabraNueva.indexOf('i') + 2;
+      System.out.println("primera ocurrencia de i:" + primerOcurrencia);
+
+      //ultima ocurrencia
+      String otraPalabra =  " supercalifragilisticoespialidoso ";
+      int ultimaOcurrencia = otraPalabra.lastIndexOf('o') + 1;
+      System.out.println("ultimaOcurrencia de o:" + ultimaOcurrencia);
+
+      //minusculas
+      String minusculas = palabraEjercicio.toLowerCase();
+      System.out.println("minusculas:" + minusculas);
+
+      //sub de la posicion 7
+      String sieteFinal = palabraEjercicio.substring(7);
+      System.out.println("subcadena desde la posicion 7 asta el final: " + sieteFinal );
+
+      //ultiman ocurrencia
+      int ultimaLi = palabraEjercicio.lastIndexOf("li") - 6;
+      System.out.println("ultima ocurrencia de li:" + ultimaLi);
+
+    }
+}
