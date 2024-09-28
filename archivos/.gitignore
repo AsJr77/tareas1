@@ -1,0 +1,21 @@
+# Ignorar archivos específicos
+act1
+calculadora.java
+Main.Java
+tarea.java
+tarea1
+tarea6.java
+tarea8
+tarea12
+tarea13
+
+# Ignorar posibles archivos de configuración del entorno de desarrollo
+.vscode/
+.idea/
+*.iml
+
+# Ignorar binarios y archivos de compilación
+*.class
+*.jar
+*.war
+*.ear
