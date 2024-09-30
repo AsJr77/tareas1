@@ -27,12 +27,11 @@ public class Main {
         int UltimaOcurrencia = palabraCortada2.lastIndexOf('o');
         System.out.println("Ultima ocurrencia de 'o' en el nombre: " + UltimaOcurrencia);
 
-        int indicePrecio = palabra.indexOf("1500.99");
-        int indiceCategoria = palabra.indexOf("Electrónica");
-        String precio = palabra.substring(indicePrecio, indicePrecio + 7);
-        String categoria = palabra.substring(indiceCategoria);
-        System.out.println("Precio y categoría: " + precio + " - " + categoria);
-
+        String nuevo = "12345;Laptop HP Pavilion;1500.99;Electrónica";
+        String primer = nuevo.substring(25,32);
+        String segundo = nuevo.substring(33,44);
+        System.out.println("precio y categoria: " + primer + "-" + segundo);
+        
         String Subcadena = palabraCortada2.substring(7,18);
         System.out.println("Subcadena desde la posición 7 del nombre: " + Subcadena);
         
