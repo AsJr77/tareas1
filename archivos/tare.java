@@ -7,7 +7,8 @@ public class Main {
        String salario = "50000.75";
 
        String nombre = correo.substring(0,10);
-
+    
+        //lo investigue la clase para invertir 
        String invertido = new StringBuilder(nombre).reverse().toString();
 
        String empresa = correo.substring(10,22);
@@ -16,7 +17,7 @@ public class Main {
        int b = 04;
        int c = 15;
        int suma = a + b + c;
-
+      //investigue Math.abs
       double salarioo = 50000.75;
       int entero = (int) salarioo;
       double decimal = salarioo - entero;
