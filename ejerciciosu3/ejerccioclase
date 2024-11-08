@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Escribe una palabra: ");
+        String palabra = scanner.nextLine();
+
+        int inicio = 0;
+        int fin = palabra.length() - 1;
+        boolean esPalindromo = true;
+
+
+        while (inicio < fin && esPalindromo) {
+            if (palabra.charAt(inicio) != palabra.charAt(fin)) {
+                esPalindromo = false; 
+            }
+            inicio++;
+            fin--;
+        }
+
+        if (esPalindromo) {
+            System.out.println("La palabra es un palíndromo.");
+        } else {
+            System.out.println("La palabra no es un palíndromo.");
+        }
+
+
+
+    }}
