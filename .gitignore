@@ -1,0 +1,18 @@
+# Ignorar imágenes de WhatsApp
+WhatsApp Image*.png
+WhatsApp Image*.jpg
+
+# Ignorar archivos Java específicos
+tarea33.java
+
+# Ignorar cualquier archivo de la carpeta 'act1'
+archivos/act1/*
+
+# Ignorar toda la carpeta 'tarea8' (si no necesitas que se comitee)
+tarea8/
+
+# Ignorar toda la carpeta 'tarea3' (si no necesitas que se comitee)
+tarea3/
+
+# Ignorar el archivo 'unidad3' si no lo necesitas
+unidad3
